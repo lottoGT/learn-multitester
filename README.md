@@ -37,6 +37,28 @@
 
 ---
 
+## 🙏 致謝與教材參考引用 (Credits & Referenced GitHub Projects)
+
+本專案之課程設計、量測步驟、防呆守則與電路範例，深度參考並致敬以下開源電子學教材與專案。誠摯感謝原作者們無私分享優質的教學資源：
+
+1. **[gavinjackson/electronics-lessons](https://github.com/gavinjackson/electronics-lessons)** — 作者：**Gavin Jackson**
+   - **引用章節**：
+     - [`phase-0/01-multimeter-mastery.md`](https://github.com/gavinjackson/electronics-lessons/blob/main/phase-0/01-multimeter-mastery.md)（*Phase Zero, Lesson 1: Multimeter Mastery*）
+     - [`images/schematics/phase-0-01-multimeter-mastery.svg`](https://github.com/gavinjackson/electronics-lessons/blob/main/images/schematics/phase-0-01-multimeter-mastery.svg)
+     - *Phase 1: Ohm's Law & Basic Circuits (Lesson 1.1 ~ 1.4)*
+   - **致敬與轉化內容**：以 **FNIRSI DMT-99** 數位電表為核心視覺原型，重現教材中的家用電池極性測試、MB-102 麵包板電源軌（5V/3.3V）驗證、四環色碼電阻比對、**「The Beep Game」麵包板 5 孔導通尋跡遊戲**、抓出內部斷芯的「嫌疑杜邦線 (Suspect Jumper Wire)」、使用 `1kΩ` 電阻對電解電容安全放電 5 秒後再量測、以及利用二極體檔 (`➔|`) 實測紅/綠/藍光 LED 順向壓降 $V_f$ 並使其微亮的經典練習。
+
+2. **[UniRegensburg/SWH](https://github.com/UniRegensburg/SWH)** — 作者：**德國雷根斯堡大學媒體資訊學系 (Media Informatics Group, University of Regensburg — Sketching with Hardware Course)**
+   - **引用教材**：
+     - [`EN/tutorials/pdf/Tutorial 1: Electricity, Multimeter.pdf`](https://github.com/UniRegensburg/SWH/blob/master/EN/tutorials/pdf/Tutorial%201:%20Electricity,%20Multimeter.pdf)
+     - [`EN/tutorials/docx/Tutorial 1: Electricity, Multimeter.docx`](https://github.com/UniRegensburg/SWH/blob/master/EN/tutorials/docx/Tutorial%201:%20Electricity,%20Multimeter.docx)
+   - **致敬與轉化內容**：導入教材中經典的 **「量測黃金守則對照表 (What? Parallel or in Series? Can the circuit be plugged in?)」**、歐姆定律 ($R = U / I$) 與電阻發熱功率 ($P = U \times I \le 0.25\text{W}$) 計算、LED 非歐姆元件特性與各色光 $V_f$ 參考值、測量人體皮膚並聯電阻影響、可變電阻 (Potentiometer) 三腳位阻值變化，以及將電路斷開以 **串聯 (In Series)** 方式量測 `5V + 微動按鈕 + 220Ω 電阻 + LED` 迴路電流的實作練習。
+
+3. **[lottoGT/learn-esp32](https://github.com/lottoGT/learn-esp32)** & **[DuRuofu/ESP32-Guide](https://github.com/DuRuofu/ESP32-Guide)**
+   - **引用內容**：沿用同系列「互動式全圖形電子學習工作台」之三欄式 UI/UX 架構、手機直向鏡頭特寫切換、以及免安裝單一檔案 (`standalone.html`) 離線封裝設計。
+
+---
+
 ## ✨ 核心功能 (Features)
 
 | 功能模組 | 說明 |

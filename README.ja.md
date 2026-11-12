@@ -11,6 +11,12 @@
   <a href="https://lottogt.github.io/learn-multitester/">
     <img src="https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%92%E9%96%8B%E3%81%8F-f59e0b?style=for-the-badge" alt="Live Demo" />
   </a>
+  <a href="https://github.com/gavinjackson/electronics-lessons">
+    <img src="https://img.shields.io/badge/Reference-gavinjackson%2Felectronics--lessons-06b6d4?style=for-the-badge" alt="electronics-lessons" />
+  </a>
+  <a href="https://github.com/UniRegensburg/SWH/blob/master/EN/tutorials/pdf/Tutorial%201:%20Electricity,%20Multimeter.pdf">
+    <img src="https://img.shields.io/badge/Reference-UniRegensburg%2FSWH_Tutorial_1-3b82f6?style=for-the-badge" alt="UniRegensburg SWH" />
+  </a>
 </p>
 
 ---
@@ -25,5 +31,19 @@
 
 👉 **[https://lottogt.github.io/learn-multitester/](https://lottogt.github.io/learn-multitester/)**
 
-- **9つの測定モードと端子切替**：`OFF`、`V⎓ (直流電圧)`、`V~ (交流電圧)`、`Ω (抵抗)`、`🔊 (導通ブザー)`、`➔| (ダイオード/LED)`、`⊣⊢ (静電容量)`、`mA⎓`、`10A⎓` を自由に切り替え可能。
-- **9つの実践レッスン**：乾電池・MB-102電源モジュール・カラーコード抵抗＆可変抵抗・ブレッドボード導通ゲーム＆断線ジャンパー線探し・LED極性判定と順方向電圧 $V_f$ 点灯・コンデンサの1kΩ安全放電・直列電流測定（オームの法則とヒューズ溶断体験）・回路の電圧降下診断・ACコンセントの安全測定を収録。
+---
+
+## 🙏 謝辞と参考・引用した GitHub プロジェクト (Credits & References)
+
+本プロジェクトのカリキュラムおよび回路演習は、以下の素晴らしいオープンソース教材を参考に作成されました。原作者の皆様に心より感謝申し上げます：
+
+1. **[gavinjackson/electronics-lessons](https://github.com/gavinjackson/electronics-lessons)**（著者：**Gavin Jackson** 氏）
+   - 参照ファイル：[`phase-0/01-multimeter-mastery.md`](https://github.com/gavinjackson/electronics-lessons/blob/main/phase-0/01-multimeter-mastery.md)、[`phase-0-01-multimeter-mastery.svg`](https://github.com/gavinjackson/electronics-lessons/blob/main/images/schematics/phase-0-01-multimeter-mastery.svg)
+   - 内容：**FNIRSI DMT-99** マルチメータをモデルにした電池測定、MB-102 電源モジュール確認、カラーコード抵抗、導通モードによるブレッドボード探索ゲーム（The Beep Game）と断線ジャンパー線の発見、1kΩ抵抗によるコンデンサの安全放電、ダイオードモードでの LED 順方向電圧 ($V_f$) と微発光テスト。
+
+2. **[UniRegensburg/SWH](https://github.com/UniRegensburg/SWH)**（著者：**レーゲンスブルク大学 メディア情報学グループ — *Sketching with Hardware***）
+   - 参照ファイル：[`EN/tutorials/pdf/Tutorial 1: Electricity, Multimeter.pdf`](https://github.com/UniRegensburg/SWH/blob/master/EN/tutorials/pdf/Tutorial%201:%20Electricity,%20Multimeter.pdf)
+   - 内容：測定の黄金ルール表（並列 vs 直列、通電可否）、オームの法則 ($R = U/I$) と電力計算 ($P = U \times I$)、可変抵抗（ポテンショメータ）と人体抵抗の影響、ボタン＋220Ω＋LED 回路の直列電流測定。
+
+3. **[lottoGT/learn-esp32](https://github.com/lottoGT/learn-esp32)** & **[DuRuofu/ESP32-Guide](https://github.com/DuRuofu/ESP32-Guide)**
+   - 内容：インタラクティブ学習ワークベンチの UI/UX 設計およびモバイル対応レイアウト。
